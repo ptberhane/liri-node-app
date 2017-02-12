@@ -45,5 +45,17 @@ function myTweets(){
 });
 };
 
-module.exports ={ spotifyMusic,movieData,myTweets}
+function doThis(){
+	fs.readFile('random.txt','utf8',function(err,data){
+			spotify.search({ type:'song'+ track})
+		if (err) console.log(err);
+		return;
+	console.log(JSON.stringify(data[i].search,null,2));	
+
+		})	
+		
+	};
+
+
+module.exports ={ spotifyMusic,movieData,myTweets,doThis}
 
